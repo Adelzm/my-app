@@ -42,3 +42,11 @@
 .input_submit:active {
     transform: scale(0.8);
 }
+
+.todos {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
