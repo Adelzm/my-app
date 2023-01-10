@@ -31,7 +31,7 @@
     background-color: #F8EDE3;
     color: #85586F;
     transition: 0.2s all;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .input_submit:hover {
@@ -46,7 +46,49 @@
 .todos {
     display: flex;
     width: 90%;
-    justify-content: space-evenly;
+    justify-content:left;
     flex-wrap: wrap;
     margin: 20px 0;
+}
+
+.todo_card {
+    display: flex;
+    margin: 10px ;
+    width: 25%;
+    border-radius: 15px;
+    padding: 15px 20px;
+    background-color: #DFD3C3;
+}
+
+.todo_card--text {
+    flex: 1;
+    border: none;
+    font-size: 20px;
+    color: #85586F;
+    font-weight: 500;
+}
+
+.todo_card--text:focus {
+    outline: none;
+}
+
+.todo_card--icon {
+    margin-left: 10px;
+    font-size: 25px;
+    color: #85586F;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+
+    .todos {
+        width: 95%;
+    }
+
+    .todo_card {
+        width: 100%;
+    }
 }
